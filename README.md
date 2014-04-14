@@ -12,5 +12,8 @@ To track and list the papers I have read,with simple comments.
 6. *Robust Object Tracking Using Constellation Model with Superpixel.* Weijun Wang 从上个时刻的分布进行采样I 个；Motion；观测更新权重；每个样本根据star model采样leaf，并根据 leaf 的观察更新权重。形成新的分布。
 7. *Embedding motion in model-based stochastic tracking.* J.M. Odobez pf 讲的很好，三个假设。打破假设。
 8. *Nearest neighbor field driven stochastic sampling for abrupt motion tracking.* proposal中使用到 nnf，总体用 mcmc，有一个平滑。
+9. **基于聚类的视频镜头分割和关键帧提取**，很简单地利用解决了连雪帧聚类的问题。
+10. **融合 HCRF 和 AAM 的足球精彩事件检索**,提出13种可用的情感特征，找到每种事件特有的情感特征组合，根据这个组合加权求和计算情感激励值，作为 HCRD 的一个观察输入。然后训练出 HCRF 用于分类。
+11. **SLIC superpixels**，用类似 kmeans 的方法，简单好用。
 
 
