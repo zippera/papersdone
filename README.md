@@ -19,5 +19,6 @@ To track and list the papers I have read,with simple comments.
 13. **Robust Object Tracking Using Constellation Model with Superpixel**。用超像素提供的信息求 parts 的 likelihood，外观模型用的 star model，跟踪框架还是基于粒子滤波的。
 14. **Sparse coding based visual tracking: Review and experimental comparison** 一篇综述，讲的非常好，尤其是 sparse coding 在 visual traking 中的应用，虽然不详细，但是会获得直观的了解。
 15. **Incremental learning for robust visual tracking**，target 用训练出来的低维空间的 eigenbasis 表示，particle 也用这个表示，然后计算距离。关键是增量地学习出 eigenbasis，所谓增量，就是把最近跟踪出来的 target也加入训练数据，文章中的算法力求提高训练效率。整体的跟踪框架还是传统的 particle filter. 
+16. **Fast video shot boundary detection framework employing pre-processing techniques**，提供了一个用于视频镜头分割的框架，极大的减少了需要计算的 non-boundary segments，对于 hard-cut 和 GT 也提供了很好的方案。不涉具体的特征和距离选择。
 
 
