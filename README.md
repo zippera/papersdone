@@ -20,5 +20,8 @@ To track and list the papers I have read,with simple comments.
 14. **Sparse coding based visual tracking: Review and experimental comparison** 一篇综述，讲的非常好，尤其是 sparse coding 在 visual traking 中的应用，虽然不详细，但是会获得直观的了解。
 15. **Incremental learning for robust visual tracking**，target 用训练出来的低维空间的 eigenbasis 表示，particle 也用这个表示，然后计算距离。关键是增量地学习出 eigenbasis，所谓增量，就是把最近跟踪出来的 target也加入训练数据，文章中的算法力求提高训练效率。整体的跟踪框架还是传统的 particle filter. 
 16. **Fast video shot boundary detection framework employing pre-processing techniques**，提供了一个用于视频镜头分割的框架，极大的减少了需要计算的 non-boundary segments，对于 hard-cut 和 GT 也提供了很好的方案。不涉具体的特征和距离选择。
+17. **Abrupt Motion Tracking via Adaptive Stochastic Approximation Monte Carlo Sampling**，实验室师兄周修庄的 CVPR 论文。用 DOS 来动态更新目标分布，escape local trap.用density grid 动态更新 proposal，使得采样的接受率更高。
+18. **Wang-Landau Monte Carlo-Based Tracking Methods for Abrupt Motions**，K.M.Lee 团队2013年的 PAMI。提出了三种方法：WLMC,AWLMC,NFWL. 也用 Dos 来应对 abrupt motion.用 ML 来代替原来的目标分布，这个是可以用样本估计的。AWLMC 中用增加退火的步骤，来make promising regions more compact.NFWL 主要是应对考虑 scale 突变的情况，这时候样本空间大了很多，为了有效采样，使用无拒绝的提议分布，另外更新 DOS 的幅度也有效加大。
+19. **Abrupt motion tracking using a visual saliency embedded particle filter**，赵清杰老师团队发表在 PR 的一篇论文。在跟丢的时候用 saliency map 来 detect 高概率的几个区域。这个有点仿生学的意味，当 center 和 surround 的 constrat 很大时，这个 center 的 saliency 或 attention 比较大。具体的计算过程基本是用的 USC iLab 的。
 
 
